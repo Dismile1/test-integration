@@ -1,12 +1,11 @@
 Feel free to complete this test task, override or change everything
 
 For start app: 
-1. Upadte tmdb.apikey in src\main\resources\application.properties
-2. Run mvn clean install
-3. Run mvn spring-boot:run
+1. Run mvn clean install
+2. Run mvn spring-boot:run
+3. Send "Register User" request
+4. Use other requests to explore app.
 
-### Register user
-curl -X POST --data "email=test@test2.com&password=test" http://localhost:8080/user/register/ -v
+To get use of application please import Postman Collection with prepared requests (TestTask.postman_collection.json).
 
-### View popular movies
-curl -X POST --data "email=test@test2.com&password=test" http://localhost:8080/movie/popular/ -v
+P.S. Authorization isn't finished and hardcoded, but the purpose is to show how is it used.

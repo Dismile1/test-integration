@@ -1,0 +1,208 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TestTask",
+		"_postman_id": "b5b590dd-3a0f-60be-41ae-155299fbe2ba",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/user/register?email=myTest@email.com&password=pass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "myTest@email.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Favourite Actor",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/actor/favourites?actorId=5530",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actor",
+						"favourites"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "5530",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bXlUZXN0QGVtYWlsLmNvbTpwYXNz",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Favourite Actor",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/actor/favourites?actorId=5530",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actor",
+						"favourites"
+					],
+					"query": [
+						{
+							"key": "actorId",
+							"value": "5530",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bXlUZXN0QGVtYWlsLmNvbTpwYXNz",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Mark Movie Watched",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/movie/watch?movieId=321612",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"watch"
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "321612",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bXlUZXN0QGVtYWlsLmNvbTpwYXNz",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Discover Movies",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/movie/discover?page=1&year=2017&month=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"discover"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "year",
+							"value": "2017",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "month",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic bXlUZXN0QGVtYWlsLmNvbTpwYXNz",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
