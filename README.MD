@@ -9,3 +9,7 @@ For start app:
 To get use of application please import Postman Collection with prepared requests (TestTask.postman_collection.json).
 
 P.S. Authorization isn't finished and hardcoded, but the purpose is to show how is it used.
+
+Use basic authorization with following credentials:
+myTest@email.com
+pass
